@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ScreenOrientationManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ScreenOrientationManager" class="dashAnchor"></a>
+    <a title="ScreenOrientationManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ScreenOrientationManager Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ScreenOrientationManager Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ScreenOrientationManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenOrientationManager.html">ScreenOrientationManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenRotationDelegate.html">ScreenRotationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ScreenOrientationManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ScreenOrientationManager</span></code></pre>
+
+                </div>
+              </div>
+            <p><strong>ScreenOrientationManager</strong></p>
+
+<p>Manage the screen orientation using UIInterfaceOrientationMask struct.</p>
+
+<p><strong>Require application(_:supportedInterfaceOrientationsFor:) implemented like extension.</strong></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Singleton%20definition"></a>
+                <a name="//apple_ref/swift/Section/Singleton definition" class="dashAnchor"></a>
+                <a href="#/Singleton%20definition">
+                  <h3 class="section-name">Singleton definition</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC9singletonABvZ"></a>
+                    <a name="//apple_ref/swift/Variable/singleton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC9singletonABvZ">singleton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>singleton</strong>
+Singleton definition.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">singleton</span> <span class="o">=</span> <span class="kt">ScreenOrientationManager</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Attributes"></a>
+                <a name="//apple_ref/swift/Section/Attributes" class="dashAnchor"></a>
+                <a href="#/Attributes">
+                  <h3 class="section-name">Attributes</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC11orientationSC011UIInterfaceB4MaskVv"></a>
+                    <a name="//apple_ref/swift/Property/orientation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC11orientationSC011UIInterfaceB4MaskVv">orientation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>orientation</strong>
+Orientation rule.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientationMask</span> <span class="o">=</span> <span class="o">.</span><span class="n">portrait</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC16rotationDelegateAA0a8RotationE0_pSgv"></a>
+                    <a name="//apple_ref/swift/Property/rotationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC16rotationDelegateAA0a8RotationE0_pSgv">rotationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>rotationDelegate</strong>
+Rotation delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rotationDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ScreenRotationDelegate.html">ScreenRotationDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC11orientationySC011UIInterfaceB4MaskV_SC0eB0OSg11andRotateTotF"></a>
+                    <a name="//apple_ref/swift/Method/orientation(_:andRotateTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC11orientationySC011UIInterfaceB4MaskV_SC0eB0OSg11andRotateTotF">orientation(_:andRotateTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>orientation(_:andRotateTo:)</strong></p>
+
+<p>Set the orientation rule and change actual orientation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">orientation</span><span class="p">(</span><span class="n">_</span> <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientationMask</span><span class="p">,</span> <span class="n">andRotateTo</span> <span class="nv">rotateOrientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC16rotationObservery10Foundation12NotificationVF"></a>
+                    <a name="//apple_ref/swift/Method/rotationObserver(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC16rotationObservery10Foundation12NotificationVF">rotationObserver(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>rotationObserver</strong></p>
+
+<p>Called on device is rotated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">func</span> <span class="nf">rotationObserver</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC20initRotationObserveryyF"></a>
+                    <a name="//apple_ref/swift/Method/initRotationObserver()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC20initRotationObserveryyF">initRotationObserver()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>initRotationObserver</strong></p>
+
+<p>Init notification observer for device rotation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initRotationObserver</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ScreenOrientationManagerAAC19endRotationObserveryyF"></a>
+                    <a name="//apple_ref/swift/Method/endRotationObserver()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ScreenOrientationManagerAAC19endRotationObserveryyF">endRotationObserver()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><strong>endRotationObserver</strong></p>
+
+<p>End notification observer for device rotation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">endRotationObserver</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://josuemeza.com/" target="_blank" rel="external">Josue Meza Peña</a>. All rights reserved. (Last updated: 2018-03-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
